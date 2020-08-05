@@ -1,21 +1,19 @@
 import React from "react";
-
-import whatsIcon from "../../assets/images/icons/whatsapp.svg";
+import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
 
 import "./styles.css";
 
-function TeacherItem() {
+const TeacherItem = () => {
   return (
     <article className="teacher-item">
       <header>
         <img
-          src="https://avatars1.githubusercontent.com/u/57379069?s=460&u=86db1b02e30d9f49bce7e09047cb8a2a3fdc0c87&v=4"
-          alt="Ana Garcia"
+          src="https://avatars0.githubusercontent.com/u/57633573?s=460&u=77ed7dc13fed0b7c75d2f35ec5573f2fde8186b3&v=4"
+          alt="Imagem Proffy"
         />
-
         <div>
           <strong>Ana Garcia</strong>
-          <span> Quimica </span>
+          <span> Química</span>
         </div>
       </header>
 
@@ -29,15 +27,16 @@ function TeacherItem() {
 
       <footer>
         <p>
-          Preço/hora <strong>R$80,00</strong>
+          Preço/Hora
+          <strong>R$ 80,00</strong>
         </p>
         <button type="button">
-          Entrar em contato
-          <img src={whatsIcon} alt="Whatsapp" />
+          <img src={whatsappIcon} alt="whatsapp" />
+          Entrar em Contato
         </button>
       </footer>
     </article>
   );
-}
+};
 
 export default TeacherItem;

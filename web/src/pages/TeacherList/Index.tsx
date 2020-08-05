@@ -1,29 +1,44 @@
 import React from "react";
-
+import Select from "../../components/Select";
 import PageHeader from "../../components/PageHeader/Index";
-
-import "./styles.css";
+import Input from "../../components/Input";
 import TeacherItem from "../../components/TeacherItem/Index";
 
-function TeacherList() {
+import "./styles.css";
+
+const TeacherList = () => {
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader title="Estes são os proffys disponíveis">
+      <PageHeader title="Esses são os proffys disponivéis.">
         <form id="search-teachers">
-          <div className="input-block">
-            <label htmlFor="subject">Matéria</label>
-            <input type="text" id="subject" />
-          </div>
+          <Select
+            name="subject"
+            label="Matéria"
+            options={[
+              { value: "Artes", label: "Artes" },
+              { value: "Biologia", label: "Biologia" },
+              { value: "Historia", label: "História" },
+              { value: "Ciência", label: "Ciência" },
+              { value: "Geografia", label: "Geografia" },
+              { value: "Matematica", label: "Matématica" },
+            ]}
+          />
 
-          <div className="input-block">
-            <label htmlFor="week_say">Dia da Semana</label>
-            <input type="text" id="week_say" />
-          </div>
+          <Select
+            name="week_day"
+            label="Dia da Semana"
+            options={[
+              { value: "0", label: "Domingo" },
+              { value: "1", label: "Segunda-Feira" },
+              { value: "2", label: "Terça-Feira" },
+              { value: "3", label: "Quartao-Feira" },
+              { value: "4", label: "Quinta-Feira" },
+              { value: "5", label: "Sexta-Feira" },
+              { value: "6", label: "Sábado" },
+            ]}
+          />
 
-          <div className="input-block">
-            <label htmlFor="time">Matéria</label>
-            <input type="text" id="time" />
-          </div>
+          <Input type="time" name="time" label="Hora" />
         </form>
       </PageHeader>
 
@@ -33,9 +48,10 @@ function TeacherList() {
         <TeacherItem />
         <TeacherItem />
         <TeacherItem />
+        <TeacherItem />
       </main>
     </div>
   );
-}
+};
 
 export default TeacherList;
