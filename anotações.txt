@@ -14,3 +14,4 @@ knex:rollback = se fez algo errado com as migrations, reverte
 Pesquisar:
 node stream
 node worker thread
+
