@@ -1,0 +1,16 @@
+Back:
+yarn init -y (criar arquivo - cria só o package.json)
+
+ts-node-dev: executa e fica observando o node. Usamos para automatizar e 
+não precisar ficar derrubando e subindo a aplicação
+tsnd == ts-node-dev
+--transpile-only: converter nosso cod typescript para js
+--ignore-watch node_modules: não quero que ele tente converter algo dessa pasta
+--respawn: responsavel por restartar o codigo após alterações
+
+knex:migration = roda as migrations que vc tem
+knex:rollback = se fez algo errado com as migrations, reverte
+
+Pesquisar:
+node stream
+node worker thread
