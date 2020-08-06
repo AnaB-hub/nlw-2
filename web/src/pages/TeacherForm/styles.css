@@ -21,6 +21,7 @@
   border: 0;
   padding: 0 2.4rem;
 }
+
 #page-teacher-form main fieldset + fieldset {
   margin-top: 6.4rem;
 }
@@ -45,6 +46,7 @@
   cursor: pointer;
   transition: color 0.2s;
 }
+
 #page-teacher-form main fieldset legend button:hover {
   color: var(--color-primary-dark);
 }
@@ -117,6 +119,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     column-gap: 1.6rem;
   }
+
   #page-teacher-form main .schedule-item .input-block {
     margin-top: 0 !important;
   }
@@ -127,9 +130,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
   #page-teacher-form main footer p {
     justify-content: space-between;
   }
+
   #page-teacher-form main footer button {
     width: 20rem;
     margin-top: 0;
